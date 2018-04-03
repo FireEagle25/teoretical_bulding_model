@@ -1,8 +1,7 @@
 <template>
   <section class="base-container">
     <div class="container">
-      <H1 style="text-align: center; font-size: 2.5vh">МЕТОД РАСЧЕТА ПРЕДЕЛЬНЫХ НАГРУЗОК НА СООРУЖЕНИЯ
-        ИЗ ЗАПОЛНЕННЫХ ЦИЛИНДРИЧЕСКИХ ОБОЛОЧЕК</H1>
+      <H1 style="text-align: center; font-size: 2.5vh">Тема исследования</H1>
       <info-block/>
       <div class="row" style="text-align: center">
         <div class="col-md-6">
