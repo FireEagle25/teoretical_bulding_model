@@ -76,9 +76,9 @@
                   "c":c,
                   "fi":fi
                 });
-                fi += 5;
+                fi += 1;
               }
-              c += 10;
+              c += 1;
             }
             return results;
           },
@@ -88,8 +88,10 @@
             const self = this;
 
             results.forEach(function(res, i, arr) {
-              if (Math.abs(closest.f - self.F) > Math.abs(res.f - self.F))
+              if (Math.abs(Math.abs(closest.f) - self.F) > Math.abs(Math.abs(res.f) - self.F) && (res.f > 0)) {
+                console.log(closest.f, res.f);
                 closest = res;
+              }
             });
             return closest;
           }
