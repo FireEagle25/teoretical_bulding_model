@@ -76,9 +76,9 @@
                   "c":c,
                   "fi":fi
                 });
-                fi += 1;
+                fi += 5;
               }
-              c += 1;
+              c += 10;
             }
             return results;
           },
@@ -102,8 +102,9 @@
           calc: function (fi_degrees, c) {
             let fi = fi_degrees * (Math.PI/180);
             const sin_cos = (1 + Math.sin(fi)) / (1 - Math.sin(fi));
-            return (((-1) * this.n * this.gamma * this.HH * Math.PI * Math.pow(this.D, 3)) / (8 * this.dd * this.k)) * ((this.gamma * this.HH)
+            const res = (((-1) * this.n * this.gamma * this.HH * Math.PI * Math.pow(this.D, 3)) / (8 * this.dd * this.k)) * ((this.gamma * this.HH)
               / ((c * Math.pow(Math.tan(fi), -1))*(sin_cos * Math.pow(Math.E, Math.PI * Math.tan(fi)) - 1))-1);
+            return Math.round(res);
           }
         }
     }
@@ -114,17 +115,6 @@
     margin: 15px;
   }
 
-  .slide-fade-enter-active {
-    transition: all .2s ease;
-  }
-  .slide-fade-leave-active {
-    transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-  }
-  .slide-fade-enter, .slide-fade-leave-to
-    /* .slide-fade-leave-active до версии 2.1.8 */ {
-    transform: translateX(10px);
-    opacity: 0;
-  }
 
   @media (max-width: 760px) {
     label {width: 100%;}

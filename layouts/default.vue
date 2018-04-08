@@ -3,7 +3,7 @@
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/">Теор. модель оценки устойчивости оболочечных гравитационных сооружений на сжимаемом основании</a>
+          <a class="navbar-brand" href="/">Теоретическая модель</a>
         </div>
       </div>
     </nav>
