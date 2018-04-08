@@ -8,6 +8,10 @@
       </div>
     </nav>
     <nuxt/>
+    <div class="bottom-left">
+      Выполнил - магистрант группы М3219 Якименко М.А. <br>
+      Научный руководитель - к.т.н, доцент, зав.кафедрой Цимбельман Н.Я.
+    </div>
   </div>
 </template>
 
@@ -26,5 +30,12 @@ html {
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
+}
+.bottom-left {
+  position: fixed;
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  font-weight: bold;
 }
 </style>
