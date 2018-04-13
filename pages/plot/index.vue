@@ -1,5 +1,12 @@
 <template>
-  <plot-calculator></plot-calculator>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <plot-calculator></plot-calculator>
+      </div>
+    </div>
+  </div>
+
 </template>
 
 <script>

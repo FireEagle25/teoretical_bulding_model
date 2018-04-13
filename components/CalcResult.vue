@@ -1,5 +1,5 @@
 <template>
-  <div if="card" class="text-center">
+  <div id="card" class="text-center">
     <div class="">
       <h5>Результат</h5>
         <table>
@@ -15,8 +15,11 @@
             <td>Горизонтальная нагрузка, F</td>
             <td class="res">{{Math.round(this.res.f)}}кН</td>
           </tr>
+          <tr v-if="material">
+            <td>Грунт</td>
+            <td class="res">{{this.material}}</td>
+          </tr>
         </table>
-      <a href="#" v-on:click="recalc" class="btn btn-primary">Расчитать заново</a>
     </div>
   </div>
 </template>
@@ -25,22 +28,23 @@
     export default {
         name: "CalcResult",
         props: ['res'],
-        methods: {
-          recalc: function () {
-            this.$emit('recalc');
-          }
+      computed: {
+        material: function () {
+          if (this.res.c >= 1 && this.res.c <= 6 && this.res.fi >= 26 && this.res.fi <= 43)
+            return "Пески";
+          if (this.res.c >= 9 && this.res.c <= 21 && this.res.fi >= 18 && this.res.fi <= 30)
+            return "Супеси";
+          if (this.res.c >= 15 && this.res.c <= 47 && this.res.fi >= 17 && this.res.fi <= 26)
+            return "Суглинки";
+          if (this.res.c >= 29 && this.res.c <= 81 && this.res.fi >= 7 && this.res.fi <= 21)
+            return "Глины";
+          return null;
         }
+      }
     }
 </script>
 
 <style scoped>
-  #card {
-    text-align: left;
-    width: 100%;
-    padding: 10px;
-    background: #cbced5;
-    border-radius: 10px;
-  }
   td {
     text-align: left;
   }

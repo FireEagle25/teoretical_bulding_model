@@ -2,11 +2,10 @@
   <section class="base-container">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <calculator/>
-        </div>
-        <div class="col-md-6">
-          <img src="/images/cover.jpg" class="rounded float-left" style="background-repeat: no-repeat; background-size: cover; max-width: 100%">
+        <div class="col-md-12">
+          <h2>Выберите вариант расчета</h2>
+          <nuxt-link to="/calc/clacc"><button type="button" class="btn btn-success btn-lg">Угол внутреннего трения</button></nuxt-link>
+          <nuxt-link to="/calc/clacfi"><button type="button" class="btn btn-warning btn-lg">Удельное сциепление</button></nuxt-link>
         </div>
       </div>
     </div>
@@ -15,18 +14,27 @@
 
 <script>
   import Calculator from "../../components/Calculator";
+  import NuxtLink from "../../.nuxt/components/nuxt-link";
 
   export default {
     components: {
+      NuxtLink,
       Calculator
     }
   }
 </script>
 
-<style>
-  .base-container {
-    min-height: 100vh;
-    display: flex;
-    text-align: center;
+<style scoped>
+  button {
+    margin: 10px;
+  }
+  .row {
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 23%;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid grey;
   }
 </style>

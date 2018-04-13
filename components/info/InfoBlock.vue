@@ -4,7 +4,7 @@
       <p :key="paragraph.id" v-for="paragraph of paragraphs_to_show">{{ paragraph }}</p>
     </div>
 
-    <div class="row" style="text-align: center">
+    <div class="row" style="text-align: center; background: none">
       <div class="col-md-12">
         <button v-on:click="curr_page--" :disabled="has_previos_page" class="btn">←</button>
         -

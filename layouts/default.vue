@@ -8,10 +8,12 @@
       </div>
     </nav>
     <nuxt/>
-    <div class="bottom-left">
-      Выполнил - магистрант группы М3219 Якименко М.А. <br>
-      Научный руководитель - к.т.н, доцент, зав.кафедрой Цимбельман Н.Я.
-    </div>
+    <footer class="footer" style="padding-top: 30px">
+      <div class="container">
+        <p class="text-muted" style="text-align: right">Выполнил - магистрант группы М3219 Якименко М.А. <br>
+          Научный руководитель - к.т.н, доцент, зав.кафедрой Цимбельман Н.Я.</p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -25,17 +27,40 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
 }
-.bottom-left {
-  position: fixed;
-  text-align: right;
-  bottom: 0;
-  right: 0;
-  font-weight: bold;
+
+.base-container {
+  min-height: 84vh;
+  display: flex;
+  text-align: center;
+}
+
+img {
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+#card {
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-top: 10px;
+}
+
+.navbar {
+  border-radius: 0;
+  border: 0;
 }
 </style>

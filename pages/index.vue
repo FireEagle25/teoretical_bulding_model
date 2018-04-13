@@ -3,7 +3,7 @@
     <div class="container">
       <H1 style="text-align: center; font-size: 2.5vh">Тема исследования</H1>
       <info-block/>
-      <div class="row" style="text-align: center">
+      <div class="row" style="text-align: center;background: none">
         <div class="col-md-6">
           <nuxt-link to="/calc"><button class="btn btn-success">Перейти к расчету</button></nuxt-link>
         </div>
@@ -17,12 +17,13 @@
 
 
 <style>
-.base-container {
-  min-height: 100vh;
-  display: flex;
-}
 button {
   margin-top: 5px;
+}
+.row {
+  background: white;
+  border-radius: 10px;
+  padding: 5px;
 }
 </style>
 <script>
