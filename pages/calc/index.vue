@@ -37,4 +37,10 @@
     border-radius: 20px;
     border: 1px solid grey;
   }
+  @media screen and (max-width: 420px){
+    .row {
+      background: transparent;
+      border: 0;
+    }
+  }
 </style>
