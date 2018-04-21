@@ -4,8 +4,8 @@
       <div class="row">
         <div class="col-md-12">
           <h2>Выберите вариант расчета</h2>
-          <nuxt-link to="/calc/clacc"><button type="button" class="btn btn-success btn-lg">Угол внутреннего трения</button></nuxt-link>
-          <nuxt-link to="/calc/clacfi"><button type="button" class="btn btn-warning btn-lg">Удельное сциепление</button></nuxt-link>
+          <nuxt-link to="/calc/clacc"><button type="button" class="btn btn-success btn-lg">Расчитать угол внутреннего трения</button></nuxt-link>
+          <nuxt-link to="/calc/clacfi"><button type="button" class="btn btn-warning btn-lg">Расчитать удельное сциепление</button></nuxt-link>
         </div>
       </div>
     </div>
