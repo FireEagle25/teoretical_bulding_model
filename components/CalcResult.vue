@@ -11,6 +11,10 @@
             <td>Угол внутреннего трения, φ</td>
             <td class="res">{{this.res.fi}}°</td>
           </tr>
+          <tr>
+            <td>Горизонтальная нагрузка, F</td>
+            <td class="res">{{Math.round(this.res.f)}}кН</td>
+          </tr>
           <tr v-if="material">
             <td>Грунт</td>
             <td class="res">{{this.material}}</td>
