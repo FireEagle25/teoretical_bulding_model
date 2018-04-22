@@ -8,7 +8,7 @@
           <nuxt-link to="/calc"><button class="btn btn-success">Перейти к расчету</button></nuxt-link>
         </div>
         <div class="col-md-6">
-          <nuxt-link to="/plot"><button class="btn btn-success">Перейти к построению графиков</button></nuxt-link>
+          <nuxt-link to="/plot"><button class="btn btn-success">Перейти к построению графика</button></nuxt-link>
         </div>
       </div>
     </div>
