@@ -31,16 +31,22 @@
   .row {
     margin-left: 1px;
     margin-right: 1px;
-    margin-top: 23%;
+    margin-top: 10vh;
     background: white;
     padding: 40px;
     border-radius: 20px;
     border: 1px solid grey;
   }
   @media screen and (max-width: 420px){
-    .row {
-      background: transparent;
-      border: 0;
+    .row, .container, .col-md-12 {
+      background: transparent !important;
+      border: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    button {
+      margin-right: 0;
+      margin-left: 0;
     }
   }
 </style>

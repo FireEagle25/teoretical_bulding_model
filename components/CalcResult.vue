@@ -30,7 +30,7 @@
         props: ['res', 'show_c'],
         computed: {
           material: function () {
-            if (this.res.c >= 1 && this.res.c <= 8 && this.res.fi >= 26 && this.res.fi <= 43)
+            if (this.res.c >= 1 && this.res.c <= 10 && this.res.fi >= 23 && this.res.fi <= 43)
               return "Пески";
             if (this.res.c >= 9 && this.res.c <= 21 && this.res.fi >= 18 && this.res.fi <= 30)
               return "Супеси";
