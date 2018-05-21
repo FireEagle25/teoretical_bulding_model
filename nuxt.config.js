@@ -1,4 +1,7 @@
 module.exports = {
+  router: {
+    base: '/teoretical_bulding_model/'
+  },
   /*
   ** Headers of the page
   */
