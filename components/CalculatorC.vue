@@ -30,11 +30,11 @@
             <input v-model.number="dd" id="dd" type="number" class="form-control">
           </div>
           <div class="form-group">
-            <label for="k">Введите коэффициент запаса, n, шт</label>
+            <label for="k">Введите коэффициент запаса, k</label>
             <input v-model.number="k" id="k" type="number" class="form-control">
           </div>
           <div class="form-group">
-            <label for="c">Введите удельное сцепление, с, кН/м^2</label>
+            <label for="c">Введите удельное сцепление, с, кПа</label>
             <input v-model.number="c" id="c" type="number" class="form-control">
           </div>
         </form>

@@ -24,12 +24,12 @@
           <input v-model.number="dd" id="dd" type="number" class="form-control">
         </div>
         <div class="form-group">
-          <label for="k">Введите коэффициент запаса, n, шт</label>
+          <label for="k">Введите коэффициент запаса, k</label>
           <input v-model.number="k" id="k" type="number" class="form-control">
         </div>
       </form>
     </div>
-    <h3>График зависимости предельной горизонтальной силы от угла внутреннего трения при заданном удельном сцепление</h3>
+    <h3>График зависимости предельной горизонтальной силы от угла внутреннего трения при заданном удельном сцеплении</h3>
     <h4>Ось "Y" - Fпр,кН, Ось "X" - φ,°</h4>
     <calc-plot-c :height="400" :data="results"></calc-plot-c>
   </div>
