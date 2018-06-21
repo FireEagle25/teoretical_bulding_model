@@ -44,8 +44,8 @@
       </div>
     </div>
     <div class="col-md-6">
-      <img src="/images/cover.jpg" class="rounded float-left" style="background-repeat: no-repeat; background-size: cover; max-width: 100%">
-      <img src="/images/formulae.jpg" class="rounded float-left" style="background-repeat: no-repeat; background-size: cover; max-width: 100%">
+      <img src="/teoretical_bulding_model/images/cover.jpg" class="rounded float-left" style="background-repeat: no-repeat; background-size: cover; max-width: 100%">
+      <img src="/teoretical_bulding_model/images/formulae.jpg" class="rounded float-left" style="background-repeat: no-repeat; background-size: cover; max-width: 100%">
       <calc-result v-if="res" v-bind:res="this.res" v-on:recalc="res = null" :show_c="false"/>
     </div>
   </div>
