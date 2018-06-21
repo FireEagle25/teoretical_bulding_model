@@ -5,7 +5,7 @@
         <table>
           <tr v-if="show_c">
             <td>Удельное сцепление, c</td>
-            <td class="res">{{this.res.c}} кН/м^2</td>
+            <td class="res">{{this.res.c}} кПа</td>
           </tr>
           <tr v-if="!show_c">
             <td>Угол внутреннего трения, φ</td>

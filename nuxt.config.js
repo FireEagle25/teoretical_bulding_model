@@ -1,11 +1,7 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+module.exports = {
   router: {
     base: '/teoretical_bulding_model/'
-  }
-} : {};
-
-module.exports = {
-  routerBase,
+  },
   /*
   ** Headers of the page
   */
