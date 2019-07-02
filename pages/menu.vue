@@ -4,8 +4,8 @@
       <div class="row">
         <div class="col-md-12">
           <h2>Выберите вариант расчета</h2>
-          <nuxt-link to="/calc"><button type="button" class="btn btn-success btn-lg">Перейти к расчету</button></nuxt-link>
-          <nuxt-link to="/plot"><button type="button" class="btn btn-warning btn-lg">Перейти к построению графиков</button></nuxt-link>
+          <nuxt-link to="/calc"><button type="button" class="btn btn-success btn-lg">Подбор значений прочностных характеристик грунта основания с, φ, при заданной нагрузке</button></nuxt-link>
+          <nuxt-link to="/plot"><button type="button" class="btn btn-warning btn-lg">Определение предельной опрокидывающей силы F, при заданных прочностных параметрах грунта</button></nuxt-link>
         </div>
       </div>
     </div>

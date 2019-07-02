@@ -6,7 +6,7 @@
       <div class="row" style="text-align: center;background: none">
 
         <div class="col-md-12">
-          <nuxt-link to="/menu"><button class="btn btn-success">Расчет</button></nuxt-link>
+          <nuxt-link to="/menu"><button class="btn btn-success">Перейти к расчету</button></nuxt-link>
         </div>
       </div>
     </div>
