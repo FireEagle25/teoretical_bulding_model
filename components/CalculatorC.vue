@@ -1,9 +1,11 @@
 <template>
 
   <div class="row" style="padding: 2px">
-    <div style="margin: 10px;padding: 4px; font-weight:bold;font-size: 16px; background-color: white; border-radius: 10px;border: 1px solid grey;max-width: 100%; text-align: justify">      В данном разделе определяется предельная нагрузка, приложенная к оголовку сооружения, которую сооружение воспринимает без потери несущей способности основания.<br>
-      Для того, чтобы определить предельную нагрузку задайтесь основными размерами оболочки (наружный диаметр –D, толщина стенки – t, высота конструкции – h , плечо равнодействующей нагрузки – d) , а также физико-механическими характеристиками грунта основания (угол внутреннего трения – φ, удельное сцепление – с).
-      Промежуточные значения могут быть определены интерполяцией.</div>
+    <div style="margin: 10px;padding: 4px; font-weight:bold;font-size: 16px; background-color: white; border-radius: 10px;border: 1px solid grey;max-width: 100%; text-align: justify">
+      В данном разделе выполняется подбор значений характеристик грунта основания, при которых не происходит нарушения равновесия системы «оболочка-основание».<br>
+      Для того чтобы определить основные физико-механические характеристики грунта основания (с – удельное сцепление грунта, φ –  угол внутреннего трения) необходимо задаться основными размерами оболочки (наружный диаметр –D, толщина стенки – t, высота конструкции – h , плечо равнодействующей нагрузки – d), а также величиной предельной нагрузки (Fmax),  воспринимаемой сооружением.<br>
+
+    </div>
     <div class="col-md-6">
       <div>
         <H3 style="font-weight: bold; margin-bottom: 2vh">Расчет</H3>
@@ -21,7 +23,7 @@
             <input v-model.number="n" id="n" type="number" class="form-control">
           </div>
           <div class="form-group">
-            <label for="gamma">Введите удельный вес, γ, кН/м^3</label>
+            <label for="gamma">Введите удельный вес наполнителя, γ, кН/м^3</label>
             <input v-model.number="gamma" id="gamma" type="number" class="form-control">
           </div>
           <div class="form-group">

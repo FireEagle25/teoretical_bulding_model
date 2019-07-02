@@ -8,11 +8,6 @@
       </div>
     </nav>
     <nuxt/>
-    <footer class="footer" style="padding-top: 30px">
-      <div class="container">
-        <p class="text-muted" style="text-align: right">Tsimbelman N.Ya., Chernova T.I., Bilgin O. Theoretical model for the stability of soil under shell gravity structures. Proceedings of the Twenty-sixth (2016) International Ocean and Polar Engineering Conference – Rhodes, Greece, June 26-July 1, 2016. Coopyright © 2016 by the International Society of Offshore and Polar Engineers (ISOPE). ISBN 978-1-880653-88-3; ISSN 1098-6189.</p>
-      </div>
-    </footer>
   </div>
 </template>
 
@@ -38,7 +33,7 @@ body {
 }
 
 .base-container {
-  min-height: 91vh;
+  min-height: 100vh;
   display: flex;
   text-align: center;
 }

@@ -20,7 +20,7 @@
               <input v-model.number="n" id="n" type="number" class="form-control">
             </div>
             <div class="form-group">
-              <label for="gamma">Введите удельный вес, γ, кН/м^3</label>
+              <label for="gamma">Введите удельный вес наполнителя, γ, кН/м^3</label>
               <input v-model.number="gamma" id="gamma" type="number" class="form-control">
             </div>
             <div class="form-group">
