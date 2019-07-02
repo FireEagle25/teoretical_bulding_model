@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row" style="padding: 2px">
     <div class="col-md-6">
         <div>
           <H3 style="font-weight: bold; margin-bottom: 2vh">Расчет</H3>
@@ -45,6 +45,9 @@
     <div class="col-md-6">
       <img src="/teoretical_bulding_model/images/cover.jpg" class="rounded float-left" style="background-repeat: no-repeat; background-size: cover; max-width: 100%">
       <img src="/teoretical_bulding_model/images/formulae.jpg" class="rounded float-left" style="background-repeat: no-repeat; background-size: cover; max-width: 100%">
+      <div style="padding: 4px; font-weight:bold;font-size: 16px; background-color: white; border-radius: 10px;border: 1px solid grey;max-width: 100%; text-align: justify">      В данном разделе определяется предельная нагрузка, приложенная к оголовку сооружения, которую сооружение воспринимает без потери несущей способности основания.
+        В данном разделе выполняется подбор значений характеристик грунта основания, при которых не происходит нарушения равновесия системы «оболочка-основание».
+        Для того чтобы определить основные физико-механические характеристики грунта основания (с – удельное сцепление грунта, φ –  угол внутреннего трения) необходимо задаться основными размерами оболочки (наружный диаметр –D, толщина стенки – t, высота конструкции – h , плечо равнодействующей нагрузки – d), а также величиной предельной нагрузки (Fmax),  воспринимаемой сооружением. </div>
       <calc-result v-if="res" v-bind:res="this.res" v-on:recalc="res = null" :show_c="true"/>
     </div>
   </div>
@@ -81,7 +84,7 @@
                   "c":c,
                   "fi":this.fi
                 });
-              c += 10;
+              c += 1;
             }
             return results;
           },
@@ -100,6 +103,15 @@
           }
 
         },
+
+		watch: {
+			c: function (val) {
+				if (val <= 0 && val != "" || val == "0") {
+					alert("Задайте удельное сцепление отличное от нуля " + val);
+					this.c = 20;
+				}
+			},
+		},
 
         methods: {
           calc: function (fi_degrees, c) {

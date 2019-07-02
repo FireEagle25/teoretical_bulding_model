@@ -1,6 +1,6 @@
 <template>
   <div style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%,rgba(255,255,255,0.8) 100%), url('http://www.mvestnik.ru/mvfoto/2018/01/23/rosatom.jpg'); background-position: center;background-repeat: no-repeat; background-size: cover;); ">
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse" style="display: none">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="/teoretical_bulding_model/">Теоретическая модель</a>
@@ -10,8 +10,7 @@
     <nuxt/>
     <footer class="footer" style="padding-top: 30px">
       <div class="container">
-        <p class="text-muted" style="text-align: right">Выполнил - магистрант группы М3219 Якименко М.А. <br>
-          Научный руководитель - к.т.н, доцент, зав.кафедрой Цимбельман Н.Я.</p>
+        <p class="text-muted" style="text-align: right">Tsimbelman N.Ya., Chernova T.I., Bilgin O. Theoretical model for the stability of soil under shell gravity structures. Proceedings of the Twenty-sixth (2016) International Ocean and Polar Engineering Conference – Rhodes, Greece, June 26-July 1, 2016. Coopyright © 2016 by the International Society of Offshore and Polar Engineers (ISOPE). ISBN 978-1-880653-88-3; ISSN 1098-6189.</p>
       </div>
     </footer>
   </div>
@@ -39,7 +38,7 @@ body {
 }
 
 .base-container {
-  min-height: 84vh;
+  min-height: 91vh;
   display: flex;
   text-align: center;
 }

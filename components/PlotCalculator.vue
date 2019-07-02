@@ -62,11 +62,11 @@
         while (c < this.c_range[1]) {
           let fi = this.fi_range[0];
           while (fi < this.fi_range[1]) {
-            results.push({
-              "f":this.calc(fi, c),
-              "c":c,
-              "fi":fi
-            });
+              results.push({
+                "f":this.calc(fi, c),
+                "c":c,
+                "fi":fi
+              });
             fi += 1;
           }
           c += 10;
@@ -79,8 +79,10 @@
       calc: function (fi_degrees, c) {
         let fi = fi_degrees * (Math.PI/180);
         const sin_cos = (1 + Math.sin(fi)) / (1 - Math.sin(fi));
-        const res = (((-1) * this.n * this.gamma * this.HH * Math.PI * Math.pow(this.D, 3)) / (8 * this.dd * this.k)) * ((this.gamma * this.HH)
+        let res = (((-1) * this.n * this.gamma * this.HH * Math.PI * Math.pow(this.D, 3)) / (8 * this.dd * this.k)) * ((this.gamma * this.HH)
           / ((c * Math.pow(Math.tan(fi), -1))*(sin_cos * Math.pow(Math.E, Math.PI * Math.tan(fi)) - 1))-1);
+        if (Math.round(res) < 0)
+        	res = 0;
         return Math.round(res);
       }
     }

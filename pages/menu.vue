@@ -4,8 +4,8 @@
       <div class="row">
         <div class="col-md-12">
           <h2>Выберите вариант расчета</h2>
-          <nuxt-link to="/calc/clacc"><button type="button" class="btn btn-success btn-lg">Определение предельной <br>опрокидывающей силы F , при<br> заданных прочностных <br>параметрах грунта</button></nuxt-link>
-          <nuxt-link to="/calc/clacfi"><button type="button" class="btn btn-warning btn-lg">Подбор значений прочностных<br> характеристик грунта  <br>основания c,φ, при заданной нагрузке</button></nuxt-link>
+          <nuxt-link to="/calc"><button type="button" class="btn btn-success btn-lg">Перейти к расчету</button></nuxt-link>
+          <nuxt-link to="/plot"><button type="button" class="btn btn-warning btn-lg">Перейти к построению графиков</button></nuxt-link>
         </div>
       </div>
     </div>
@@ -13,13 +13,9 @@
 </template>
 
 <script>
-  import Calculator from "../../components/Calculator";
-  import NuxtLink from "../../.nuxt/components/nuxt-link";
 
   export default {
     components: {
-      NuxtLink,
-      Calculator
     }
   }
 </script>
